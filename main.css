@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box
+}
+body{
+	font-family: monospace;
+	background-color: #dedede
+}
+.todo-container{
+	width: 500px;
+	margin: 20px auto;
+	border-radius: 10px
+	
+}
+
+ .clear{
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer
+}
+.todo-content ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	min-height: 300px;
+	padding: 10px
+}
+
+.todo-content{
+	background-color: #fff;
+	position: relative
+}
+
+.todo-content li {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	
+	
+}
+.todo-content li i{
+
+}
+
+.todo-content li i{
+	float: left;
+	cursor: pointer;
+	font-size: 20px;
+	
+}
+.todo-content li p{
+	float: left;
+	margin: 0;
+	font-size: 18px;
+	margin-left: 10px
+	
+}
+.todo-content li p.co{
+	color: #999
+}
+
+.todo-content li .delete{
+	float: right;
+	
+}
+.todo-content li .delete:hover{
+	color: red
+}
+
+.add-item{
+	margin-top: 10px
+}
+.add-item i{
+	color: darkgreen;
+	font-size: 30px;
+	float: left;
+	padding-top: 5px;
+	cursor: pointer
+}
+.add-item input{
+	width: calc(100% - 30px);
+	float: left;
+	padding: 10px;
+	vertical-align: middle
+		
+}
+.no-task{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+.todo-content .item.check{
+	color: #999
+}
